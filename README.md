@@ -11,4 +11,4 @@ Green numbers in square brackets can be copied in clipboard on click.
 - /raw - prints out local coordinates
 - /coords - prints out faction coordinates
 - /convert <space-delimited coordinates> - converts faction coordinates to local (to use with minimap etc.)
-- /gui - toggles on-screen gui (shows faction coordinates)
+- /hud - toggles on-screen gui (shows faction coordinates)
