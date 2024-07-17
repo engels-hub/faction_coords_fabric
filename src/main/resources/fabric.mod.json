@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "faction-coords",
+	"version": "${version}",
+	"name": "faction-coords",
+	"description": "This mod helps with sharing locations between faction members in servers with coordinate randomisation\n",
+	"authors": [
+		"engels-hub"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/faction-coords/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.engels.coords.Factioncoords"
+		],
+		"client": [
+			"com.engels.coords.FactioncoordsClient"
+		]
+	},
+	"mixins": [
+		"faction-coords.mixins.json",
+		{
+			"config": "faction-coords.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
